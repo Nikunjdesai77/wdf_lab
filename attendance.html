@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Attendance - Student Portal</title>
+  <link rel="stylesheet" href="attendance.css" />
+</head>
+<body>
+
+  <!-- 🔙 Back Button -->
+  <a href="academics.html" class="back-arrow">⬅️</a>
+
+  <!-- 📅 Page Title -->
+  <header class="attendance-header">
+    <h1>📊 Attendance Overview</h1>
+  </header>
+
+  <!-- 📦 Attendance Cards -->
+  <section class="attendance-container">
+
+    <!-- ✅ High Attendance -->
+    <div class="attendance-card high">
+      <h3>OOP</h3>
+      <p>Total Classes: 30</p>
+      <p>Present: 28</p>
+      <p>Attendance: <strong>93.3%</strong></p>
+      <div class="progress-bar">
+        <div class="fill" style="width: 93.3%;"></div>
+      </div>
+      <span class="status good">✅ Excellent</span>
+    </div>
+
+    <!-- ⚠️ Medium Attendance -->
+    <div class="attendance-card medium">
+      <h3>WDF</h3>
+      <p>Total Classes: 25</p>
+      <p>Present: 20</p>
+      <p>Attendance: <strong>80.0%</strong></p>
+      <div class="progress-bar">
+        <div class="fill" style="width: 80%;"></div>
+      </div>
+      <span class="status average">⚠️ Average</span>
+    </div>
+
+    <!-- ❌ Low Attendance -->
+    <div class="attendance-card low">
+      <h3>CN</h3>
+      <p>Total Classes: 28</p>
+      <p>Present: 18</p>
+      <p>Attendance: <strong>64.3%</strong></p>
+      <div class="progress-bar pulse">
+        <div class="fill" style="width: 64.3%;"></div>
+      </div>
+      <span class="status low">❌ Low</span>
+    </div>
+
+    <!-- ✅ Another High Attendance -->
+    <div class="attendance-card high">
+      <h3>DSA</h3>
+      <p>Total Classes: 32</p>
+      <p>Present: 30</p>
+      <p>Attendance: <strong>93.7%</strong></p>
+      <div class="progress-bar">
+        <div class="fill" style="width: 93.7%;"></div>
+      </div>
+      <span class="status good">✅ Excellent</span>
+    </div>
+
+  </section>
+
+</body>
+</html>

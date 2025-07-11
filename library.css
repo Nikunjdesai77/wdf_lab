@@ -1,0 +1,112 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f7faff;
+  padding: 30px 20px;
+}
+
+/* 🔙 Back Arrow */
+.back-arrow {
+  font-size: 22px;
+  color: #003366;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.back-arrow:hover {
+  transform: translateX(-6px);
+  color: #007acc;
+}
+
+/* 📚 Page Title */
+.library-header h1 {
+  text-align: center;
+  color: #003366;
+  font-size: 28px;
+  margin-bottom: 40px;
+  animation: slideIn 0.8s ease;
+}
+
+/* 📦 Book Cards Grid */
+.library-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* 📘 Book Card Style */
+.book-card {
+  background: linear-gradient(145deg, #e0f2ff, #d0e8ff);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(145deg, #d0ecff, #bde4ff);
+}
+
+/* Book Title */
+.book-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+/* Book Details */
+.book-card p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+/* Status Badge */
+.status {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 16px;
+}
+
+/* 🔴 Overdue */
+.overdue {
+  background-color: #f8d7da;
+  color: #a10000;
+}
+
+/* 🟠 Issued */
+.issued {
+  background-color: #fff3cd;
+  color: #b8860b;
+}
+
+/* ✅ Returned */
+.returned {
+  background-color: #d4edda;
+  color: #007a33;
+}
+
+/* 🔄 Animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

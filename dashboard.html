@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <!-- ✅ NAVBAR -->
+  <header class="navbar">
+
+    <!-- 🔵 Logo Left -->
+    <div class="navbar-left">
+      <a href="dashboard.html">
+        <img src="logo.jpeg" alt="College Logo" class="logo">
+      </a>
+    </div>
+
+    <!-- 🟡 Center Links -->
+    <nav class="page-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="academics.html">Academics</a>
+      <a href="result.html">Result</a>
+      <a href="fees.html">Fees</a>
+      <a href="profile.html">Profile</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+
+    <!-- 🔔 Right Notification -->
+    <div class="navbar-right">
+      <div class="notification-wrapper">
+        <label tabindex="0" class="notif-icon">🔔</label>
+        <div class="notif-box">
+          <h4>Notifications</h4>
+          <ul>
+            <li>📘 New Practical Uploaded <span class="time">2 hr ago</span></li>
+            <li>📅 Timetable Updated <span class="time">Today 9:00 AM</span></li>
+            <li>📚 Library Book Due <span class="time">6 hr ago</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- ✅ BODY SECTION -->
+  <main class="dashboard-body">
+
+    <!-- 📝 To-Do List -->
+  <ul class="todo-list">
+  <li><input type="checkbox"><span>DO Leetcode Problem</span></li>
+  <li><input type="checkbox" checked><span>DSA Problem</span></li>
+  <li><input type="checkbox"><span>Self Study Of Coumputer Networking</span></li>
+</ul>
+
+
+    <!-- 📊 Progress Section -->
+<div class="progress-bar">
+  <label>Coumputer Networking</label>
+  <div class="bar">
+    <div class="fill" style="--final-width: 70%;">
+      <span class="percent">70%</span>
+    </div>
+  </div>
+</div>
+
+<div class="progress-bar">
+  <label>DSA</label>
+  <div class="bar">
+    <div class="fill" style="--final-width: 80%;">
+      <span class="percent">80%</span>
+    </div>
+  </div>
+</div>
+
+<div class="progress-bar">
+  <label>WDF</label>
+  <div class="bar">
+    <div class="fill" style="--final-width: 90%;" >
+      <span class="percent">90%</span>
+    </div>
+  </div>
+</div>
+
+
+
+  </main>
+
+</body>
+</html>

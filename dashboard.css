@@ -1,0 +1,217 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body background */
+body {
+  background-color: #f7faff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  color: #fff;
+  padding: 10px 20px;
+  gap: 20px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.page-links {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  gap: 20px;
+}
+
+.page-links a {
+  text-decoration: none;
+  color: #ffffffcc;
+  font-size: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.page-links a:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Notification */
+.notification-wrapper {
+  position: relative;
+  margin-left: 20px;
+}
+
+.notif-icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.notif-icon:hover {
+  transform: rotate(15deg) scale(1.2);
+  color: #ffcc00;
+}
+
+.notif-box {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: #fff;
+  color: #000;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  padding: 15px;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.notification-wrapper:focus-within .notif-box {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.notif-box h4 {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #003366;
+}
+
+.notif-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notif-box li {
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  transition: background 0.3s ease, padding-left 0.3s ease;
+  cursor: pointer;
+}
+
+.notif-box li:hover {
+  background-color: #f0f0f0;
+  padding-left: 10px;
+}
+
+.time {
+  display: block;
+  font-size: 12px;
+  color: #666;
+}
+
+/* ✅ Dashboard Body */
+.dashboard-body {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 30px 40px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+/* ✅ To-Do Section */
+.todo-section,
+.progress-section {
+  margin-bottom: 40px;
+}
+
+.todo-section h2,
+.progress-section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #003366;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.todo-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.todo-list li {
+  margin: 12px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.todo-list li:hover {
+  background-color: #f1f5ff;
+}
+
+.todo-list input[type="checkbox"] {
+  accent-color: #04a6f3;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* ✅ Progress Section */
+.progress-bar {
+  margin: 25px 0;
+}
+
+.progress-bar label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.bar {
+  width: 100%;
+  height: 24px;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  background: linear-gradient(to right, #04a6f3, #067df0);
+  animation: growBar 1.5s forwards;
+  animation-delay: 0.2s;
+  width: 0; /* animation start */
+}
+
+.percent {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Progress Animation */
+@keyframes growBar {
+  0% { width: 0%; }
+  100% { width: var(--final-width, 0%); }
+}

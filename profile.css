@@ -1,0 +1,73 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f7faff;
+  padding: 30px 20px;
+}
+
+/* 🔙 Back Arrow */
+.back-arrow {
+  font-size: 22px;
+  color: #003366;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.back-arrow:hover {
+  transform: translateX(-6px);
+  color: #007acc;
+}
+
+/* Header */
+.profile-header h1 {
+  text-align: center;
+  color: #003366;
+  font-size: 28px;
+  margin-bottom: 40px;
+  animation: slideIn 0.8s ease;
+}
+
+/* Profile Box */
+.profile-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: linear-gradient(145deg, #e0f2ff, #d0e8ff);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Text */
+.profile-info p {
+  font-size: 16px;
+  margin-bottom: 14px;
+  color: #333;
+}
+.profile-info p span {
+  font-weight: bold;
+  color: #003366;
+}
+
+/* Animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

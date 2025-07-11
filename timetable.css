@@ -1,0 +1,103 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f7faff;
+  padding: 30px 20px;
+}
+
+/* 🔙 Back Arrow */
+.back-arrow {
+  font-size: 22px;
+  color: #003366;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.back-arrow:hover {
+  transform: translateX(-6px);
+  color: #007acc;
+}
+
+/* 📅 Page Title */
+.timetable-header h1 {
+  text-align: center;
+  color: #003366;
+  font-size: 28px;
+  margin-bottom: 40px;
+  animation: slideIn 0.8s ease;
+}
+
+/* 📦 Day Card Layout */
+.timetable-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* 🎯 Individual Day Card */
+.day-card {
+  background: linear-gradient(145deg, #e0f2ff, #d0e8ff);
+  border-radius: 20px;
+  padding: 25px 20px;
+  text-align: left;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.8s ease;
+}
+
+.day-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(145deg, #d0ebff, #c2e0ff);
+}
+
+/* 📘 Day Titles */
+.day-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #003366;
+}
+
+/* 🕘 Slot List */
+.day-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.day-card li {
+  font-size: 15px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  color: #222;
+}
+
+/* ✨ Animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

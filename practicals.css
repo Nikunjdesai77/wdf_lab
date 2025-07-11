@@ -1,0 +1,124 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f7faff;
+  padding: 30px 20px;
+}
+
+/* Back Arrow */
+.back-arrow {
+  font-size: 22px;
+  color: #003366;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.back-arrow:hover {
+  transform: translateX(-5px);
+  color: #007acc;
+}
+
+/* Page Title */
+.practical-header h1 {
+  text-align: center;
+  color: #003366;
+  font-size: 28px;
+  margin-bottom: 40px;
+  animation: popUp 1s ease-out;
+}
+
+/* Card Layout */
+.practical-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* Practical Card Style */
+.practical-card {
+  background: linear-gradient(145deg, #e0f2ff, #d0e8ff);
+  border-radius: 40px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.practical-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(145deg, #d0ebff, #b4ddff);
+}
+
+.practical-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.practical-card p {
+  font-size: 15px;
+  color: #333;
+}
+
+/* Status Badge */
+.status {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.submitted {
+  background-color: #d4f4dd;
+  color: #007a33;
+}
+
+.pending {
+  background-color: #fff3cd;
+  color: #b8860b;
+}
+
+.notdone {
+  background-color: #f8d7da;
+  color: #b00;
+}
+
+/* View Button */
+.view-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #056eed;
+  color: #fff;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #035fce;
+}
+
+/* Entry Animation */
+@keyframes popUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
