@@ -215,3 +215,61 @@ body {
   0% { width: 0%; }
   100% { width: var(--final-width, 0%); }
 }
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .dashboard-body {
+    max-width: 98vw;
+    padding: 20px 10px;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 8px;
+  }
+  .page-links {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-body {
+    padding: 10px 2px;
+    margin: 10px 2px;
+    border-radius: 6px;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px 2px;
+  }
+  .logo {
+    width: 32px;
+    height: 32px;
+  }
+  .page-links a {
+    font-size: 13px;
+    padding: 4px 6px;
+  }
+  .todo-section h2,
+  .progress-section h2 {
+    font-size: 16px;
+    padding-bottom: 2px;
+  }
+  .todo-list li {
+    font-size: 13px;
+    padding: 6px 6px;
+    gap: 6px;
+  }
+  .progress-bar label {
+    font-size: 13px;
+  }
+  .bar {
+    height: 16px;
+  }
+  .percent {
+    font-size: 11px;
+    right: 4px;
+    top: 1px;
+  }
+}

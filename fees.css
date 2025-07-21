@@ -110,3 +110,48 @@ body {
 .fee-summary p strong {
   color: #003366;
 }
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .student-info,
+  .fee-summary,
+  .fee-table-container {
+    max-width: 98vw;
+    padding: 16px 8px;
+  }
+  .fees-header .logo {
+    width: 60px;
+  }
+  .fees-header h1 {
+    font-size: 18px;
+  }
+  .fees-header h2 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 8px 2px;
+  }
+  .fees-header .logo {
+    width: 40px;
+    margin-bottom: 6px;
+  }
+  .fees-header h1 {
+    font-size: 15px;
+  }
+  .fees-header h2 {
+    font-size: 12px;
+  }
+  .student-info,
+  .fee-summary {
+    padding: 10px 4px;
+    font-size: 13px;
+  }
+  .fee-table th,
+  .fee-table td {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+}

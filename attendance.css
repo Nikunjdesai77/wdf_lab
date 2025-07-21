@@ -161,3 +161,41 @@ body {
     box-shadow: 0 0 0px rgba(255, 0, 0, 0.2);
   }
 }
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .attendance-header h1 {
+    font-size: 22px;
+  }
+  .attendance-container {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px 2px;
+  }
+  .attendance-header h1 {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  .attendance-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .attendance-card {
+    padding: 14px;
+    font-size: 14px;
+  }
+  .attendance-card h3 {
+    font-size: 16px;
+  }
+  .attendance-card p {
+    font-size: 12px;
+  }
+  .status {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}

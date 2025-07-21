@@ -122,3 +122,51 @@ body {
     opacity: 1;
   }
 }
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .practical-header h1 {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+  .practical-container {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px 2px;
+  }
+  .back-arrow {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .practical-header h1 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .practical-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .practical-card {
+    padding: 14px;
+    font-size: 14px;
+    border-radius: 16px;
+  }
+  .practical-card h3 {
+    font-size: 15px;
+  }
+  .practical-card p {
+    font-size: 12px;
+  }
+  .status {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+  .view-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}

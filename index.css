@@ -10,6 +10,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f0f0f0;
   color: #333;
+  
 }
 
 .overlay {
@@ -98,4 +99,27 @@ body {
 
 .signup-text a:hover {
   text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .overlay {
+    align-items: flex-start;
+    padding-top: 40px;
+    min-height: 100vh;
+  }
+  .login-form {
+    padding: 24px 10px;
+    max-width: 95vw;
+    font-size: 0.98rem;
+  }
+  .login-form h2 {
+    font-size: 1.3rem;
+  }
+  .login-form input,
+  .login-form button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+  .signup-text {
+    font-size: 0.9rem;
+  }
 }

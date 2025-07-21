@@ -146,3 +146,57 @@ body {
   font-weight: bold;
   color: #007acc;
 }
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .student-info,
+  .summary-box,
+  .result-table-container {
+    max-width: 98vw;
+    padding: 16px 8px;
+  }
+  .result-header .logo {
+    width: 60px;
+  }
+  .result-header h1 {
+    font-size: 18px;
+  }
+  .result-header h2 {
+    font-size: 15px;
+  }
+  .result-header h3 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 8px 2px;
+  }
+  .result-header .logo {
+    width: 40px;
+    margin-bottom: 6px;
+  }
+  .result-header h1 {
+    font-size: 15px;
+  }
+  .result-header h2 {
+    font-size: 12px;
+  }
+  .result-header h3 {
+    font-size: 11px;
+  }
+  .student-info,
+  .summary-box {
+    padding: 10px 4px;
+    font-size: 13px;
+  }
+  .result-table th,
+  .result-table td {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+  .print-date {
+    font-size: 11px;
+  }
+}

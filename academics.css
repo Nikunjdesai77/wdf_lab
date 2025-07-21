@@ -206,3 +206,51 @@ body {
   color: #888;
   margin-top: 10px;
 }
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .academics-header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 5px;
+  }
+  .page-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 16px 4px;
+  }
+  .academics-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 2px;
+  }
+  .back-arrow {
+    position: static;
+    margin-bottom: 10px;
+  }
+  .page-title {
+    font-size: 16px;
+    text-align: left;
+  }
+  .semester-summary,
+  .notice-section {
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+  .academic-panels {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .panel {
+    font-size: 14px;
+    padding: 14px;
+  }
+  .hamburger-menu {
+    width: 95vw;
+    right: 2vw;
+  }
+}

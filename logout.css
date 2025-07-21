@@ -70,3 +70,26 @@ body {
     transform: translateY(0);
   }
 }
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  body {
+    padding: 8px 2px;
+  }
+  .logout-message {
+    padding: 18px 4px;
+    border-radius: 8px;
+  }
+  .logout-message h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .login-again {
+    font-size: 13px;
+  }
+  .back-arrow {
+    font-size: 16px;
+    top: 8px;
+    left: 8px;
+  }
+}
