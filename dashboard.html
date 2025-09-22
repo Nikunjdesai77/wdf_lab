@@ -44,6 +44,12 @@
     </div>
 
   </header>
+  <div class="slider">
+  <div class="slide">📢 Exam Timetable Released</div>
+  <div class="slide">📚 Library Due Date Extended</div>
+  <div class="slide">🏆 Sports Week Starts Monday</div>
+</div>
+
 
   <!-- ✅ BODY SECTION -->
   <main class="dashboard-body">
@@ -84,9 +90,48 @@
   </div>
 </div>
 
+<!-- 🔄 Slider -->
+<div class="slider">
+  <div class="slide">📢 Exam Timetable Released</div>
+  <div class="slide">📚 Library Due Date Extended</div>
+  <div class="slide">🏆 Sports Week Starts Monday</div>
+</div>
+
+<!-- ❓ FAQ Section -->
+
+
+<section id="faq" class="faq-section">
+  <h2>❓ Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <button class="faq-question">How to apply for leave?</button>
+    <div class="faq-answer">
+      Go to Academics → Forms → Leave Application.
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">How to check results?</button>
+    <div class="faq-answer">
+      Go to Result Page → Select Semester.
+    </div>
+  </div>
+</section>
+
+<script>
+  const questions = document.querySelectorAll(".faq-question");
+  questions.forEach(q => {
+    q.addEventListener("click", () => {
+      q.classList.toggle("active");
+      const ans = q.nextElementSibling;
+      ans.style.display = ans.style.display === "block" ? "none" : "block";
+    });
+  });
+</script>
+
+
 
 
   </main>
+<script src="dashboard.js"></script>
 
 </body>
 </html>

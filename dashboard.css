@@ -273,3 +273,81 @@ body {
     top: 1px;
   }
 }
+/* Slider */
+.slider {
+  background: #e9f3ff;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  animation: fadeSlide 9s infinite;
+  border-radius: 6px;
+  margin: 15px;
+}
+
+@keyframes fadeSlide {
+  0%, 33% { content:"📢 Exam Timetable Released"; }
+  34%, 66% { content:"📚 Library Due Date Extended"; }
+  67%, 100% { content:"🏆 Sports Week Starts Monday"; }
+}
+
+/* FAQ Section */
+.faq-section {
+  margin-top: 40px;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  background: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 15px;
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px;
+  background: #f9f9f9;
+  border-left: 3px solid #003366;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+/* Slider */
+.slider {
+  background: #e9f3ff;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 6px;
+  margin: 15px 0;
+}
+.slide { display: none; }
+
+/* FAQ Section */
+.faq-section {
+  margin-top: 40px;
+}
+.faq-question {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  background: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 15px;
+}
+.faq-answer {
+  display: none;
+  padding: 10px;
+  background: #f9f9f9;
+  border-left: 3px solid #003366;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
