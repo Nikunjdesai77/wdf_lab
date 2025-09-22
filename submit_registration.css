@@ -1,0 +1,141 @@
+/* General Body */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7faff;
+  min-height: 100vh;
+  padding: 30px 20px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* 🔙 Back Arrow */
+.back-arrow {
+  font-size: 22px;
+  color: #003366;
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* 🔷 Header */
+.academics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f7faff;
+  position: relative;
+}
+
+.page-title {
+  font-size: 24px;
+  color: #003366;
+}
+
+/* ☰ Hamburger Menu (Optional) */
+.hamburger {
+  font-size: 26px;
+  color: #003366;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background: #ffffff;
+  list-style: none;
+  padding: 12px 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+  opacity: 0;
+  width: 200px;
+}
+
+.hamburger:hover .hamburger-menu,
+.hamburger:focus-within .hamburger-menu {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.hamburger-menu li a {
+  display: block;
+  padding: 12px 20px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #003366;
+  transition: background 0.3s ease;
+}
+
+.hamburger-menu li a:hover {
+  background-color: #f0f4ff;
+}
+
+/* 📝 Registration Form Section */
+.registration-section {
+  margin: 100px auto;
+  max-width: 500px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.registration-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #003366;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.registration-form input[type="checkbox"] {
+  margin-top: 15px;
+}
+
+.registration-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.registration-form button:hover {
+  background-color: #0055aa;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .registration-section {
+    margin: 80px 20px;
+    padding: 20px;
+  }
+  .page-title {
+    font-size: 20px;
+  }
+}

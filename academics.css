@@ -254,3 +254,136 @@ body {
     right: 2vw;
   }
 }
+/* Ensure all links inside hamburger menu have the same style */
+.hamburger-menu li a,
+.hamburger-menu a {
+  display: block;
+  padding: 12px 20px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #003366;
+  transition: background 0.3s ease;
+}
+
+.hamburger-menu li a:hover,
+.hamburger-menu a:hover {
+  background-color: #f0f4ff;
+}
+/* General Body */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7faff;
+  min-height: 100vh;
+  padding: 30px 20px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* 🔙 Back Arrow */
+.back-arrow {
+  font-size: 22px;
+  color: #003366;
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* 🔷 Header */
+.academics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f7faff;
+  position: relative;
+}
+
+.page-title {
+  font-size: 24px;
+  color: #003366;
+}
+
+/* ☰ Hamburger Menu */
+.hamburger {
+  font-size: 26px;
+  color: #003366;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background: #ffffff;
+  list-style: none;
+  padding: 12px 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+  opacity: 0;
+  width: 200px;
+}
+
+.hamburger:hover .hamburger-menu,
+.hamburger:focus-within .hamburger-menu {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.hamburger-menu li a {
+  display: block;
+  padding: 12px 20px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #003366;
+  transition: background 0.3s ease;
+}
+
+.hamburger-menu li a:hover {
+  background-color: #f0f4ff;
+}
+
+/* 📘 Semester Summary */
+.semester-summary {
+  margin-top: 80px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.semester-summary p {
+  font-size: 16px;
+  color: #003366;
+}
+
+/* 📢 Notices */
+.notice-section {
+  margin-top: 30px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.notice-section h3 {
+  color: #003366;
+}
+
+.notice-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.notice-section li {
+  padding: 6px 0;
+  font-size: 15px;
+}
